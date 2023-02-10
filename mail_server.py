@@ -195,7 +195,7 @@ def get_sent_route(sender: str):
 
 
    res = jsonify(get_sent(sender))
-   return.status_code = 200 # Status code for “OK”
+   res.status_code = 200 # Status code for “OK”
    return res
 
 
