@@ -18,7 +18,6 @@ def send_mail(recipient: str, sender: str, subject: str, body: str) -> bool:
         sender (str): The sender of the mail
         subject (str): The subject of the mail
         body (str): The body of the mail
-
     Returns:
         bool: True if the mail was sent successfully, False otherwise
     """
@@ -119,4 +118,3 @@ def main():
 # you'll need to demo sending, receiving, and deleting mail for checkoff.
 if __name__ == '__main__':
     main()
-
