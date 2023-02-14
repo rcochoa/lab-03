@@ -15,8 +15,16 @@ def get_weather(city) -> Dict:
 
 # TODO: try connecting to a another API! e.g. reddit (https://www.reddit.com/dev/api/)
 
+API2_URL = "https://official-joke-api.appspot.com/random_joke"
+def get_joke() -> Dict:
+    res = requests.get(API2_URL)
+    return res.json()
+
+
 def main():
     temp = get_weather("London")
+    print(temp)
+    temp = get_joke()
     print(temp)
 
 if __name__ == "__main__":
